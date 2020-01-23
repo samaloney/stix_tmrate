@@ -36,8 +36,8 @@ def calculate_tm_rate(product, num_energies, integration_time):
 
 def run():
     res = {
-        'lc': calculate_tm_rate(light_curve, 5, 4)/(24*60*60),
-        'bg': calculate_tm_rate(background, 5, 8)/(24*60*60),
+        'lc': calculate_tm_rate(light_curve, 8, 4)/(24*60*60),
+        'bg': calculate_tm_rate(background, 8, 8)/(24*60*60),
         'sp': calculate_tm_rate(spectra, 32, 32)/(24*60*60),
         'var': calculate_tm_rate(variance, None, 4)/(24*60*60),
         'ff': calculate_tm_rate(flare_flag_location, None, 8)/(24*60*60),
